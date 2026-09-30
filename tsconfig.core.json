@@ -1,0 +1,1 @@
+{"extends":"./tsconfig.json","compilerOptions":{"noEmit":false,"declaration":true,"outDir":"lib","rootDir":"src/core","module":"NodeNext","moduleResolution":"NodeNext","rewriteRelativeImportExtensions":true},"include":["src/core/**/*.ts"]}

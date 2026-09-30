@@ -1,0 +1,9 @@
+node_modules/
+dist/
+.sites-runtime/
+.env*
+!.env.example
+*.log
+.DS_Store
+
+lib/

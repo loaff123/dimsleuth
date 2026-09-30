@@ -1,0 +1,45 @@
+{
+  "name": "dimsleuth",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Source-linked dimensional analysis for debugging physics formulas",
+  "engines": {
+    "node": ">=22.18.0"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "npm run build:core && tsc --noEmit && vite build && node scripts/standalone.mjs",
+    "test": "node scripts/test.mjs",
+    "check": "tsc --noEmit",
+    "preview": "vite preview",
+    "build:core": "tsc -p tsconfig.core.json"
+  },
+  "exports": {
+    ".": {
+      "types": "./lib/index.d.ts",
+      "import": "./lib/index.js"
+    }
+  },
+  "devDependencies": {
+    "@types/node": "24.0.0",
+    "happy-dom": "^20.8.9",
+    "typescript": "5.9.3",
+    "vite": "^7.3.6"
+  },
+  "files": [
+    "lib",
+    "README.md",
+    "LICENSE",
+    "docs/semantics.md"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/loaff123/dimsleuth.git"
+  },
+  "bugs": {
+    "url": "https://github.com/loaff123/dimsleuth/issues"
+  },
+  "homepage": "https://github.com/loaff123/dimsleuth#readme"
+}
