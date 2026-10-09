@@ -1,5 +1,9 @@
 # Changelog
 
+## Unreleased
+
+- Distinguish invalid inputs from dimension conflicts in the English/Chinese selected-operation inspector, including formulas containing both kinds of error
+
 ## 0.1.0 — 2026-09-30
 
 - Explicit expression parser and exact rational seven-SI dimensional algebra
